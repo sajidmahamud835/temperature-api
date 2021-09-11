@@ -31,4 +31,3 @@ const displayTemperature = temperature => {
     const icon = document.getElementById('icon');
     icon.setAttribute('src', iconUrl);
 }
-}
