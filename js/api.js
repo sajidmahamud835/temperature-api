@@ -19,5 +19,16 @@ const displayTemperature = temperature => {
     setInnerText('temp', temperature.main.temp);
     setInnerText('weather', temperature.weather[0].main);
 
-    console.log(temperature);
+    //set weather icon
+    const iconUrl = `http://openweathermap.org/img/wn/${temperature.weather[0].icon}@2x.png`
+    console.log(iconUrl);
+    const icon = document.getElementById('icon');
+    icon.setAttribute('src', iconUrl);
+
+    //set background
+    const iconUrl = `http://openweathermap.org/img/wn/${temperature.weather[0].icon}@2x.png`
+    console.log(iconUrl);
+    const icon = document.getElementById('icon');
+    icon.setAttribute('src', iconUrl);
+}
 }
