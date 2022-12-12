@@ -24,10 +24,4 @@ const displayTemperature = temperature => {
     console.log(iconUrl);
     const icon = document.getElementById('icon');
     icon.setAttribute('src', iconUrl);
-
-    //set background
-    const iconUrl = `http://openweathermap.org/img/wn/${temperature.weather[0].icon}@2x.png`
-    console.log(iconUrl);
-    const icon = document.getElementById('icon');
-    icon.setAttribute('src', iconUrl);
 }
